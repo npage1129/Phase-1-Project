@@ -23,115 +23,22 @@ getImagesJuniper(data)
 }) 
     });
 function getImagesJuniper(item){
-    imageJuniper.src = item.message;
-    
+    imageJuniper.src = item.message;  
 }
-
-function accumulateLikesJuniper(){
-    let count = 0;
-    likesJuniper.addEventListener("click", function () {
+function accumulateLikes(likeButton, likeCount){
+let count = 0;
+likeButton.addEventListener("click", function(){
 count += 1;
-likeCountJuniper.innerText = count + " " + "likes";
-
+likeCount.innerText = count + " " + "likes";
+likeButton.style.color = "gold"
 });
-
 }
-accumulateLikesJuniper()
+accumulateLikes(likesJuniper, likeCountJuniper);
+accumulateLikes(likesJesse,likeCountJesse);
+accumulateLikes(likesJessup,likeCountJessup);
+accumulateLikes(likesFern,likeCountFern);
+accumulateLikes(likesRain,likeCountRain);
+accumulateLikes(likesIris,likeCountIris);
 
-function accumulateLikesJesse(){
-    let count = 0;
-    likesJesse.addEventListener("click", function () {
-count += 1;
-likeCountJesse.innerText = count + " " + "likes";
 
-});
 
-}
-accumulateLikesJesse()
-
-function accumulateLikesFern(){
-    let count = 0;
-    likesFern.addEventListener("click", function () {
-count += 1;
-likeCountFern.innerText = count + " " + "likes";
-
-});
-
-}
-accumulateLikesFern()
-
-function accumulateLikesJessup(){
-    let count = 0;
-    likesJessup.addEventListener("click", function () {
-count += 1;
-likeCountJessup.innerText = count + " " + "likes";
-
-});
-
-}
-accumulateLikesJessup()
-
-function accumulateLikesRain(){
-    let count = 0;
-    likesRain.addEventListener("click", function () {
-count += 1;
-likeCountRain.innerText = count + " " + "likes";
-
-});
-
-}
-accumulateLikesRain()
-
-function accumulateLikesIris(){
-    let count = 0;
-    likesIris.addEventListener("click", function () {
-count += 1;
-likeCountIris.innerText = count + " " + "likes";
-
-});
-
-}
-accumulateLikesIris()
-changeColorJuniper()
-
-function changeColorJuniper(){
-likesJuniper.addEventListener("click", function(){
-likesJuniper.style.color = "gold";
-})
-}
-changeColorJesse()
-
-function changeColorJesse(){
-likesJesse.addEventListener("click", function () {
-likesJesse.style.color = "gold";
-
-})
-}
-changeColorFern()
-function changeColorFern(){
-    likesFern.addEventListener("click", function () {
-    likesFern.style.color = "gold";
-    
-    })
-    }
-    changeColorJessup()
-    function changeColorJessup(){
-        likesJessup.addEventListener("click", function () {
-        likesJessup.style.color = "gold";
-        
-        })
-        }
-        changeColorRain()
-        function changeColorRain(){
-            likesRain.addEventListener("click", function () {
-            likesRain.style.color = "gold";
-            
-            })
-            }
-            changeColorIris()
-        function changeColorIris(){
-            likesIris.addEventListener("click", function () {
-            likesIris.style.color = "gold";
-            
-            })
-            }
