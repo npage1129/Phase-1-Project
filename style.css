@@ -1,4 +1,12 @@
 
+#Form{
+    width: 10%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    position:relative;
+    top: 80000px;
+    left: 35px  
+}
 html {
     overflow-y: auto;
     background: #faf3e6;
@@ -63,7 +71,7 @@ body:after {
     align-items: center;
     padding:10px;
     position:relative;
-    left:
+    left:45px
 }
 .likes-section-Iris {
     display: flex;
@@ -94,13 +102,51 @@ body:after {
     font-size: 0.9rem;
     font-weight: 600;
 }
-.like-button {
+#like-button-Juniper {
     color: rgb(255, 127, 80);
     font-size: 1.5rem;
     border: none;
     background: none;
     transition: color 300ms;
     cursor: pointer;
+}
+#like-button-Jesse {
+    color: rgb(255, 127, 80);
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+}
+#like-button-Fern {
+    color: rgb(255, 127, 80);
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+}
+#like-button-Iris {
+    color: rgb(255, 127, 80);
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+}
+#like-button-Jessup {
+    color: rgb(255, 127, 80);
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+}
+#like-button-Rain {
+    color: rgb(255, 127, 80);
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
 }
 .like-button:hover {
     color: rgb(241, 71, 19);
@@ -178,53 +224,7 @@ body:after {
     clear: both;
     display: table;
 }
-h4{
-width: 100%;
-padding: 12px 20px;
-margin: 8px 0;
-position:relative;
-top:1315px;
-left: 0px
-}
-#new-name{
-width: 35%;
-padding: 3px 5px;
-margin: 8px 0;
-box-sizing: border-box;
-position: relative;
-top:1290px;
-left:0px;
-}
-#contact-info{
-width: 35%;
-padding: 3px 5px;
-margin: 8px 0;
-box-sizing: border-box;
-position: relative;
-top:1325px;
-right:671px;
-z-index:14"
-}
-#puppy-name{
-width: 35%;
-padding: 3px 5px;
-margin: 8px 0;
-box-sizing: border-box;
-position: relative;
-top:1320px;
-left:0px; 
-z-index:14"  
-}
-#button{
-width: 10%;
-padding: 3px 5px;
-margin: 8px 0;
-box-sizing: border-box;
-position: relative;
-top:1350px;
-right:195px; 
-z-index: 13"  
-}
+
 #card-image-Juniper{
     overflow: hidden;
     position:relative;
@@ -279,3 +279,5 @@ z-index: 13"
     top:-465px;
     left:35px; 
 }
+
+
