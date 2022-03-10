@@ -1,5 +1,13 @@
 
- auto;
+#Form{
+    width: 10%;
+    padding: 5px 10px;
+
+    top: 80000px;
+    left: 35px  
+}
+html {
+    overflow-y: auto;
     background: #faf3e6;
     background-size: 22em;
 }
