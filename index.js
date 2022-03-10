@@ -1,5 +1,9 @@
 let imageJuniper = document.querySelector('#card-image-Juniper')
 let imageJesse = document.querySelector('#card-image-Jesse')
+let imageJessup = document.querySelector('#card-image-Jessup')
+let imageRain= document.querySelector('#card-image-Rain')
+let imageIris= document.querySelector('#card-image-Iris')
+let imageFern = document.querySelector('#card-image-Fern')
 let likesJuniper = document.querySelector('#like-button-Juniper')
 let likeCountJuniper = document.querySelector('#like-count-Juniper')
 let likesJesse = document.querySelector('#like-button-Jesse')
@@ -12,6 +16,13 @@ let likesRain = document.querySelector('#like-button-Rain')
 let likeCountRain = document.querySelector('#like-count-Rain')
 let likesIris = document.querySelector('#like-button-Iris')
 let likeCountIris = document.querySelector('#like-count-Iris')
+let commentsJuniper = document.querySelector('#details-Juniper')
+let commentsJesse = document.querySelector('#details-Jesse')
+let commentsFern = document.querySelector('#details-Fern')
+let commentsJessup = document.querySelector('#details-Jessup')
+let commentsRain = document.querySelector('#details-Rain')
+let commentsIris = document.querySelector('#details-Iris')
+
 
 document.addEventListener('DOMContentLoaded', ()=> {
 fetch('https://dog.ceo/api/breeds/image/random')
@@ -25,7 +36,7 @@ getImagesJuniper(data)
 function getImagesJuniper(item){
     imageJuniper.src = item.message;  
 }
-function accumulateLikes(likeButton, likeCount){
+const accumulateLikes = (likeButton, likeCount) => {
 let count = 0;
 likeButton.addEventListener("click", function(){
 count += 1;
@@ -40,5 +51,17 @@ accumulateLikes(likesFern,likeCountFern);
 accumulateLikes(likesRain,likeCountRain);
 accumulateLikes(likesIris,likeCountIris);
 
+const clickMe = (image, detailSection, string ) => {
+    image.addEventListener("click", () => {
+        let description = document.createElement('p');
+description.innerText = string
+detailSection.append(description)
+    })
+}
 
-
+clickMe(imageJuniper, commentsJuniper, 'Hi, I am the featured pup at the moment! Adopt me today!')
+clickMe(imageJesse, commentsJesse, 'Hi my name is Jesse. I may be big, but I am one sweet lady!')
+clickMe(imageFern, commentsFern, 'Hi my name is Fern, and I am as goofy as they come!')
+clickMe(imageJessup, commentsJessup, 'Hi, my name is Jessup, and I am as sweet as I am cute!')
+clickMe(imageRain, commentsRain, 'Hi, my name is Rain, and cuddling is my favorite!')
+clickMe(imageIris, commentsIris, 'Hi my name is Iris, and I am very chill and loving.')

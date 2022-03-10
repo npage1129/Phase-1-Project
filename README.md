@@ -6,5 +6,5 @@ Welcome to Perfect Pal, a website that allows you to view a description and a pi
 
 To share our webpage please follow these simple steps:
 1. Access the github repository: https://github.com/npage1129/Phase-1-Project
-2. Fork clone and open file
+2. Fork, clone, and open file
 3. Upon opening the file in VS Code, enter open index.html in your terminal for the project to open in your browser
